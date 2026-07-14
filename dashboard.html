@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMoney</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        SmartMoney
+    </div>
+
+    <div class="nav-right">
+
+        <a href="subscribe.html" class="register-btn">
+            Subscribe
+        </a>
+
+       <a
+        href="login.html"
+        class="nav-link"
+        id="loginBtn">
+            Login
+        </a>
+
+        <a
+        href="register.html"
+        class="nav-link"
+        id="registerBtn">
+            Daftar
+        </a>
+
+        <span
+        id="userName"
+        class="nav-link"
+        style="display:none;">
+        </span>
+
+        <a
+        href="#"
+        class="nav-link"
+        id="logoutBtn"
+        style="display:none;">
+            Logout
+        </a>
+
+        <div class="menu-dropdown">
+
+            <button class="menu-btn" onclick="toggleMenu()">
+    ☰
+            </button>
+
+                        <div class="dropdown-content">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <a href="saham/saham.html">
+                    Saham
+                </a>
+
+                <a href="crypto/crypto.html">
+                    Crypto
+                </a>
+
+            </div>
+            </nav>
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <span class="badge">
+            Smart Investing
+        </span>
+
+        <h1>
+            Temukan Saham Terbaik Untuk
+            <span>Investasi</span>
+        </h1>
+
+        <p>
+            Analisis saham Indonesia berbasis kayanya naik sih.
+        </p>
+        
+        <a href="saham/screener.html" class="screener-btn">
+            Lihat Screener
+        </a>
+        
+        </div>
+
+        <div class="market-card">
+
+            <h3>IHSG</h3>
+
+                <h1 id="ihsgValue"></h1>
+
+                <p id="ihsgChange"></p>
+
+                <div class="update-time">
+                    Last Update: 08 Jun 2026 • 07:14 WIB
+                </div>
+
+                <canvas id="ihsgChart"></canvas>
+                        
+            <div class="ihsg-info">
+        
+                <div>
+                    <span>Tinggi</span>
+                    <strong id="highValue"></strong>
+                </div>
+        
+                <div>
+                    <span>Buka</span>
+                    <strong id="openValue"></strong>
+                </div>
+        
+                <div>
+                    <span>Rendah</span>
+                    <strong id="lowValue"></strong>
+                </div>
+        
+                <div>
+                    <span>Value</span>
+                    <strong id="volumeValue"></strong>
+                </div>
+        
+            </div>
+        
+        </div>
+</section>
+
+<section class="recommendation">
+
+    <h2>Saham Trending</h2>
+
+    <div id="stockContainer"></div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+<footer class="footer">
+    © 2026 SmartMoney — Indonesia Stock Screening Platform. All Rights Reserved.
+
+    <br>
+
+    <span class="version">
+        Version 1.1.0 Beta
+    </span>
+</footer>

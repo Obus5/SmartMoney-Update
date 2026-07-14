@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar SmartMoney</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-card">
+
+    <a href="dashboard.html" class="back-btn">
+        ← Dashboard
+    </a>
+
+    <h1>Daftar</h1>
+
+    <input
+        type="text"
+        id="nama"
+        placeholder="Nama Lengkap"
+    >
+
+    <input
+        type="text"
+        id="telepon"
+        placeholder="Nomor Telepon"
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <button onclick="registerUser()">
+        Daftar
+    </button>
+
+    <p>
+        Sudah punya akun?
+        <a href="login.html">
+            Login
+        </a>
+    </p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="register.js"></script>
+
+</body>
+</html>

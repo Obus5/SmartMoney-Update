@@ -1,0 +1,1230 @@
+/* ======================
+   LANDING PAGE
+====================== */
+
+.landing{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.landing-content{
+    max-width:900px;
+}
+
+.landing-content h1{
+    font-size:72px;
+    line-height:1.2;
+}
+
+.landing-content span{
+    color:#00d26a;
+}
+
+.landing-content p{
+    margin-top:25px;
+
+    font-size:22px;
+
+    color:#bfc8d4;
+
+    line-height:1.7;
+}
+
+.landing-btn{
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#00d26a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 32px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.landing-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ===================================
+   HOME PAGE IHSG
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#07111f;
+    color:white;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    padding:25px 8%;
+    background:#08111f;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00d26a;
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#00d26a;
+}
+.hero-left h1{
+    font-size:72px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    max-width:800px;
+
+    margin-bottom:25px;
+}
+
+.hero-left p{
+    font-size:22px;
+
+    color:#bfc8d4;
+
+    line-height:1.7;
+
+    max-width:700px;
+
+    margin-bottom:40px;
+}
+
+.screener-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#00d26a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+
+.screener-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,210,106,.3);
+}
+
+.hero{
+    display:grid;
+
+    grid-template-columns: 1fr 600px;
+
+    gap:40px;
+
+    padding: 30px 8% 60px;
+
+    align-items:start;
+}
+
+
+.update-time{
+    margin-top:8px;
+    margin-bottom:20px;
+
+    color:#64748b;
+    font-size:12px;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+}
+.badge{
+    display:inline-block;
+
+    background:#00d26a20;
+    color:#00d26a;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    font-size:16px;
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.hero-left{
+    width:100%;
+}
+
+.market-card{
+    width:100%;
+
+    background:#111c2d;
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+.recommendation{
+    background:white;
+    color:black;
+    padding:80px 8%;
+}
+
+#stockContainer{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.score{
+    font-size:40px;
+    font-weight:bold;
+    color:#00a651;
+    margin:10px 0;
+}
+
+.entry{
+    color:#2563eb;
+}
+
+.target{
+    color:#16a34a;
+}
+
+.stoploss{
+    color:#dc2626;
+}
+
+/* =======================
+   kotak atas
+======================= */
+
+nav{
+    width:90%;
+
+    margin:20px auto;
+
+    padding:20px 40px;
+
+    display:flex;
+    align-items:center;
+
+    background:#0f1b2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00d26a;
+
+    margin-right:auto;
+}
+
+/* =======================
+   SCREENER dan Tecnical analys
+======================= */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 30px;
+
+    background:#07111f;
+
+    border-bottom:1px solid #1a2942;
+}
+
+.dashboard-btn{
+    background:#00d26a;
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+}
+
+.dashboard-btn:hover{
+    opacity:0.9;
+}
+.stock-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:#111c2d;
+}
+
+.stock-table thead tr{
+    background:#18263d;
+}
+
+.stock-table th{
+    padding:18px;
+    text-align:left;
+    color:white;
+}
+
+.stock-table td{
+    padding:18px;
+    color:white;
+    border-top:1px solid #23314a;
+}
+
+.stock-table tr:hover{
+    background:#162338;
+}
+
+.score-high{
+    color:#00d26a;
+    font-weight:bold;
+}
+
+.score-mid{
+    color:#f59e0b;
+    font-weight:bold;
+}
+
+.score-low{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+.screener-tools{
+    padding:20px;
+}
+
+#searchStock{
+    width:300px;
+
+    padding:12px 15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#18263d;
+
+    color:white;
+
+    font-size:15px;
+}
+
+.screener-layout{
+    display:grid;
+
+    grid-template-columns: 2fr 350px;
+
+    gap:20px;
+
+    padding:20px;
+}
+
+.detail-panel{
+    background:#111c2d;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    height:fit-content;
+}
+
+.detail-panel h2{
+    color:#00d26a;
+
+    margin-bottom:20px;
+}
+
+.detail-panel p{
+    margin-bottom:15px;
+
+    color:#d1d5db;
+}
+
+.technical-container{
+    padding:40px;
+}
+
+.chart-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.chart-card{
+    background:#111c2d;
+    padding:20px;
+    border-radius:15px;
+}
+
+.chart-card h3{
+    margin-bottom:15px;
+}
+
+.chart-card img{
+    width:100%;
+    border-radius:10px;
+}
+.menu{
+    display:flex;
+    gap:15px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    background:#111c2d;
+
+    border:1px solid #1f2f48;
+
+    transition:.3s;
+}
+
+.menu a:hover{
+    background:#18263d;
+
+    border-color:#00d26a;
+}
+
+.menu a.active{
+    background:#00d26a;
+
+    color:white;
+
+    font-weight:700;
+}
+
+.last-update{
+    font-size:12px;
+    color:#64748b;
+    letter-spacing:.3px;
+}
+
+.technical-header{
+    margin-bottom:30px;
+}
+
+.last-update{
+    margin-top:8px;
+
+    font-size:13px;
+
+    color:#94a3b8;
+}
+
+.logo-section{
+    display:flex;
+    flex-direction:column;
+}
+
+.last-update{
+    margin-top:5px;
+
+    font-size:13px;
+
+    color:#94a3b8;
+}
+
+/* =======================
+   SCREENER GARIS PUTIH
+======================= */
+.stock-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#111c2d;
+}
+
+.stock-table th{
+    padding:18px;
+    text-align:left;
+    border-bottom:1px solid #23314a;
+}
+
+.stock-table td{
+    padding:18px;
+    border-bottom:1px solid #23314a;
+}
+
+/* ===================================
+   IHSG
+=================================== */
+.ihsg-info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.ihsg-info div{
+    background:#18263d;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    min-height:80px;
+}
+
+.ihsg-info span{
+    display:block;
+
+    color:#94a3b8;
+
+    font-size:14px;
+}
+
+.ihsg-info strong{
+    display:block;
+
+    margin-top:8px;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+/* ===================================
+   Button lihat screaner home
+=================================== */
+
+.screener-btn{
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#00d26a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.screener-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,210,106,.3);
+}
+
+/* ===================================
+   SAHAM TRENDING
+=================================== */
+.harga{
+    font-size:42px;
+    font-weight:bold;
+    color:#111827;
+    margin:20px 0 10px;
+}
+
+.naik{
+    color:#00d26a;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.turun{
+    color:#ef4444;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:10px;
+}
+/* ===================================
+   SPONSOR
+=================================== */
+.sponsor-section{
+    padding:60px 30px;
+    text-align:center;
+}
+
+.sponsor-grid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:150px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.sponsor-grid img{
+    height:120px;
+    opacity:.7;
+    transition:.3s;
+}
+
+.sponsor-grid img:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
+/* =========================
+   MENU HAMBURGER
+========================= */
+
+.menu-dropdown{
+    position:relative;
+    margin-left:15px;
+}
+
+.menu-btn{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#111c2d;
+    color:white;
+
+    border:1px solid #1f2f48;
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:22px;
+}
+
+.dropdown-content{
+    display:none;
+
+    position:absolute;
+
+    top:65px;
+    right:0;
+
+    width:220px;
+
+    background:#111c2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    z-index:9999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.dropdown-content.show{
+    display:block;
+}
+
+.dropdown-content a{
+    display:block;
+
+    padding:15px 20px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-bottom:1px solid #1d2d44;
+}
+
+.dropdown-content a:hover{
+    background:#18263d;
+}
+
+/* ===================================
+   button Subscribe login dan daftar
+=================================== */
+
+.register-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 24px;
+
+    background:#00d26a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+/* =======================
+   warna login daftar dan kembali login 
+======================= */
+.register-btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,210,106,.3);
+}
+
+.auth-card p{
+    margin-top:15px;
+    color:white;
+}
+
+.auth-card p a{
+    color:#00d26a;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.auth-card p a:hover{
+    text-decoration:underline;
+}
+.back-btn{
+    display:block;
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+    color:#94a3b8;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+.back-btn:hover{
+    color:#00d26a;
+}
+
+.auth-card p{
+    margin-top:15px;
+    color:white;
+}
+
+.auth-card p a{
+    color:#00d26a;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.auth-card p a:hover{
+    text-decoration:underline;
+}
+/* =======================
+   NAV RIGHT
+======================= */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.nav-link{
+    text-decoration:none;
+    color:white;
+
+    padding:12px 20px;
+
+    border:1px solid #1f2f48;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.nav-link:hover{
+    background:#18263d;
+}
+
+.version{
+    display:block;
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:12px;
+}
+/* ==========================
+  HARGA PAKET
+========================== */
+.pricing{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.pricing h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.pricing p{
+    color:#94a3b8;
+}
+
+.pricing-grid{
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+.price-card{
+    width:300px;
+
+    background:#111c2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:20px;
+
+    padding:35px 25px;
+}
+
+.price-card h2{
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:42px;
+    font-weight:bold;
+    color:#00d26a;
+    margin-bottom:15px;
+}
+
+.price-card button{
+    width:100%;
+
+    margin-top:25px;
+
+    background:#00d26a;
+
+    color:white;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+.premium{
+    border:2px solid #00d26a;
+}
+/* ===================================
+   Button payment
+=================================== */
+.buy-btn{
+    display:block;
+    margin-top:20px;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+
+    background:#00d26a;
+    color:white;
+
+    border-radius:12px;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    opacity:.9;
+    transform:translateY(-2px);
+}
+/* ===================================
+  BAYAR 
+=================================== */
+.payment-page{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+    background:#07111f;
+}
+
+.payment-card{
+    width:100%;
+    max-width:500px;
+
+    background:#111c2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+}
+.payment-price{
+    font-size:48px;
+    font-weight:700;
+
+    color:#00d26a;
+
+    margin:15px 0 25px;
+}
+.status-badge{
+    display:inline-block;
+
+    background:#f59e0b20;
+
+    color:#f59e0b;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    margin-top:15px;
+}
+.back-payment{
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 22px;
+
+    background:#18263d;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+}
+.qris-image{
+    width:100%;
+    max-width:280px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+}
+/* ===================================
+  Login dan Register
+=================================== */
+.auth-card{
+    width:100%;
+    max-width:400px;
+
+    margin:100px auto;
+
+    background:#111c2d;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+}
+
+.auth-card h1{
+    margin-bottom:20px;
+}
+
+.auth-card input{
+    width:100%;
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+    border-radius:10px;
+}
+
+.auth-card button{
+    width:100%;
+
+    padding:15px;
+
+    background:#00d26a;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.category-page{
+    padding:80px;
+    text-align:center;
+}
+
+.category-page h1{
+    font-size:48px;
+    color:#fff;
+}
+
+.category-grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+/* ===================================
+   SAHAM html
+=================================== */
+.category-card{
+    background:#0d1f3c;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+    border-color:#00e676;
+}
+
+.back-container{
+    width:90%;
+    margin:40px auto 0;
+}
+
+.back-btn{
+    display:inline-block;
+    padding:12px 24px;
+    background:#0b1f45;
+    color:#fff;
+    text-decoration:none;
+    border:1px solid #00d26a;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#00d26a;
+    color:#020f26;
+}
+/* WATCHLIST */
+
+.watchlist-container{
+    padding:50px 8%;
+}
+
+.watchlist-container h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.watchlist-container p{
+    color:#94a3b8;
+}
+
+.watch-grid{
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+}
+
+.watch-card{
+    background:#111c2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:20px;
+
+    padding:25px;
+}
+
+.watch-card h3{
+    margin:15px 0;
+}
+
+.top-pick{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.badge-buy{
+    background:#00d26a;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.badge-watch{
+    background:#f59e0b;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+.badge-avoid{
+    background:#ef4444;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:bold;
+}
+
+/* =======================
+   TRADINGVIEW
+======================= */
+
+.tv-widget-container{
+    width:90%;
+    max-width:1400px;
+
+    margin:50px auto;
+
+    background:#111c2d;
+
+    border:1px solid #1d2d44;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    overflow:hidden;
+}
+
+.tv-widget-container h2{
+    margin-bottom:20px;
+}
+
+#tradingview_chart{
+    width:100%;
+    height:600px;
+}
+
+/* ===================================
+   COPYRIGHT
+=================================== */
+.footer{
+    text-align:center;
+    padding:30px 0;
+    color:#94a3b8;
+    font-size:14px;
+    border-top:1px solid #1d2d44;
+    margin-top:60px;
+}

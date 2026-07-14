@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-card">
+
+    <a href="dashboard.html" class="back-btn">
+        ← Dashboard
+    </a>
+
+    <h1>Profile Saya</h1>
+
+    <p><strong>Nama:</strong></p>
+    <p id="nama"></p>
+
+    <p><strong>Email:</strong></p>
+    <p id="email"></p>
+
+    <p><strong>Status:</strong></p>
+    <p id="status"></p>
+
+    <button onclick="logoutUser()">
+        Logout
+    </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="profile.js"></script>
+
+</body>
+</html>

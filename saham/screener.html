@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SmartMoney Screener</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    
+    <div class="topbar">
+
+        <div class="logo-section">
+            <div class="logo">SmartMoney</div>
+    
+            <div class="last-update">
+                Last Update: 08 Jun 2026 • 08:01 WIB
+            </div>
+        </div>
+    
+        <div class="menu-dropdown">
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="dropdown-content">
+
+        <a href="../dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="saham.html">
+            Saham
+        </a>
+
+        <a href="technical.html">
+            Technical
+        </a>
+
+         <a href="watchlist.html">
+            Watchlist
+        </a>
+
+    </div>
+
+</div>
+</div>
+    <table class="stock-table">
+
+        <thead>
+            <tr>
+                <th>Saham</th>
+                <th>Harga Sekarang</th>
+                <th>Entry</th>
+                <th>Stop Loss</th>
+                <th>Take Profit</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+    
+        <tbody>
+
+            <tr>
+                <td>INKP</td>
+                <th>5.900</th>
+                <td>6.500</td>
+                <td class="sell">6.100</td>
+                <td class="buy">7.200</td>
+                <td>90%</td>
+            </tr>
+        
+            <tr>
+                <td>BBCA</td>
+                <th>5.900</th>
+                <td>8.700</td>
+                <td class="sell">8.400</td>
+                <td class="buy">9.500</td>
+                <td>95%</td>
+            </tr>
+        
+            <tr>
+                <td>BBRI</td>
+                <th>5.900</th>
+                <td>4.300</td>
+                <td class="sell">4.100</td>
+                <td class="buy">4.800</td>
+                <td>92%</td>
+            </tr>
+        
+            <tr>
+                <td>BMRI</td>
+                <th>5.900</th>
+                <td>5.200</td>
+                <td class="sell">4.900</td>
+                <td class="buy">5.800</td>
+                <td>88%</td>
+            </tr>
+        
+        </tbody>
+    </table>
+    <section class="sponsor-section">
+
+        <h2>Supported By</h2>
+    
+        <div class="sponsor-grid">
+    
+            <img src="../assets/obusstore.png" alt="obus store">
+    
+            <img src="../assets/qclip.png" alt="qclip">
+    
+            <img src="../assets/qbites.png" alt="qbites">
+    
+            <img src="../assets/pojokprint.png" alt="pojok print">
+    
+        </div>
+    
+    </section>
+    <footer class="footer">
+    © 2026 SmartMoney — Indonesia Stock Screening Platform. All Rights Reserved.
+
+    <br>
+
+    <span class="version">
+        Version 1.1.0 Beta
+    </span>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
